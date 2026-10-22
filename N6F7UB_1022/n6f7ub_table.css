@@ -1,0 +1,28 @@
+.table {
+    width: 450px;
+    height: 525px;
+    border-collapse: collapse;
+    font-family: Verdana;
+    font-weight: bold;
+}
+.red {background-color: red;}
+.gray {
+    background-color: #cccccc;
+    font-style: italic;
+    text-align: center;
+    height: 75px;
+}
+.beige {background-color: #ffff88;}
+.center {text-align: center;}
+.magenta {
+    background-color: #ffff00;
+    text-align: center;
+}
+.scroll {
+    overflow: visible;
+    overflow-x: scroll;
+    overflow-x: scroll;
+    height: 150px;
+    width: 150px;
+    text-align: justify;
+}
