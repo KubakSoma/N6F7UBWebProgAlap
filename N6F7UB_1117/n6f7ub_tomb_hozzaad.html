@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tömb - hozzáad, ill. hossza</title>
+    </head>
+
+    <body>
+        
+        <h3>Tömb elemeinek hozzáadása, hossza</h3>
+
+        <strong>Előtte: </strong> <p id="n6f7ub"></p>
+        <strong>Utána: </strong> <p id="n6f7ub1"></p>
+
+        <strong>Tömb hossza: </strong> <p id="n6f7ub2"></p>
+
+        <button onclick="hozzaad()">Új érték hozzáadása</button>
+        <button onclick="hossz()">Tömb hossza</button>
+
+        <script>
+            let prognyelvek = ["HTML5", "CSS", "JS"];
+            document.getElementById("n6f7ub").innerHTML = prognyelvek;
+
+            function hozzaad() {
+                prognyelvek.push("C nyelv"); //Hozzáadja a prognyelvekhez a C nyelvet
+                document.getElementById("n6f7ub1").innerHTML = prognyelvek;
+            }
+
+            function hossz() {
+                document.getElementById("n6f7ub2").innerHTML = prognyelvek.length;//prognyelvek hossza
+            }
+        </script>
+
+    </body>
+</html>
