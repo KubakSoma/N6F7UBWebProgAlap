@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For ciklus</title>
+
+    <style>
+        body{
+            font-family: sans-serif, Tahoma, Geneva, Verdana, sans-serif;
+            background: #f3f3f3;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript for ciklus</h1>
+    <h3>JavaScript for ciklus</h3>
+
+    <div id="n6f7ub"></div>
+
+    <script>
+        const nevek = ["Piros Anna", "Fehér Béla", "Zöld Csilla", "Könnyű Dávid", "Nehéz Erika"];
+
+        let szoveg = "<h2>Névsor:</h2><ul>";
+
+
+        for (let i = 0; i < nevek.length; i++)
+        {
+            if (nevek[i].length > 4)
+            {
+                szoveg += `<li>${nevek[i]}</li>`;
+            } else {
+                szoveg += `<li>${nevek[i]}</li>`;
+            }
+        }
+
+        szoveg += "</ul>";
+
+        document.getElementById("n6f7ub").innerHTML = szoveg;
+    </script>
+    
+</body>
+</html>
